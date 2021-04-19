@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article - Formi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="./index.html"><img class="logo" src="./images/logo.svg" alt="Logo formi"></a>
+        <nav class="navBar">
+            <a href="">Démo</a>
+            <a href="">Fonctionnalités</a>
+            <a href="">Bénéfices</a>
+            <a href="">Tarfis</a>
+            <a class="signIn" href="./login.html">Connexion</a>
+        </nav>
+    </header>
+
+    <div id="article">
+        <div class="article-head">
+            <img class="cover" src="./images/articles/article-1-head.jpg" alt="">
+            <div class="gradient-image"></div>
+            <a class="prev" href="./blog.html">< Retour</a>
+            <h1 class="title">L’avenir de vos formations<br/>E-learning</h1>
+        </div>
+    
+    
+        <div class="article-body">
+            <h3>par R.Sadiki, le 09/10/2020</h3>
+            <p class="body2">
+                Les plateformes en ligne n’ont jamais été aussi en vogue. Depuis la Covid, nos habitudes et notre rapport aux formations a changé. Désormais, tout doit être contrôlé et bien géré en lignes.
+                selon le site 
+
+                https://www.e-learning-letter.com/info_article/m/2072/les-chiffres-2021-du-digital-learning.html 
+
+                28% d’entre eux souhaitent augmenter la part de leur catalogue proposant des dispositifs 100% à distance… Il n’était que 11% l’an passé : ils sont trois fois plus nombreux aujourd’hui ! La demande est évolue rapidement surtout au cours de cette période où la distanciation sociale a pris le dessus. Cet outil répond, ainsi, à un besoin existant et en pleine expansion.
+
+
+                vous propose la meilleure plateforme qui vous fait gagner du temps en centralisant tous vos besoins: documents, facturations et tableau KPI qui résume vos performances. En un clic, tout est à votre disposition pour que vous pilotiez vos formations en temps réel
+
+                Grâce à FORMI vous gagnerez du temps en gérant toutes vos formations.
+            </p>
+            <a class="cta ctaStroke contact">Contactez-nous</a>
+        </div>
+    </div>
+
+    <div class="popup">
+        <div class="overlay"></div>
+        <div class="popupForm">
+            <div class="container">
+                <h2>Avez-vous des questions ?</h1>
+                <p>Posez-nous vos questions, un commercial vous recontactera dans les plus brèves délais.</p>
+                <form action="">
+                    <div>
+                        <label for="company">Nom & Prénom</label>
+                        <input type="text" name="company" id="company" required>
+                    </div>
+                    <div>
+                        <label for="email">Adresse mail</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div>
+                        <label for="message">Message</label>
+                        <textarea rows="4" name="message" id="message" required></textarea>
+                    </div>
+                    <p class="">
+                        En cliquant sur “envoyer” ci-dessus, vous autorisez Adriver à
+                        stocker et traiter les données personnelles soumises ci-dessus afin de traiter votre demande de contact. Vous pouvez vous désabonner des ces communications à tout moment.
+                    </p>
+                    <button class="cta ctaFill" type="submit">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footerNav">
+            <a href="https://www.facebook.com/FORMI-103700655185353" target="_blank">Facebook</a>
+            <a href="">Nous contacter</a>
+            <a href="">Partenaires</a>
+            <a href="">FAQ</a>
+        </div>
+
+        <div class="spacer"></div>
+
+        <div class="copyrights">
+            <p>Politique de confidentialité @2021 Mentions légales</p>
+        </div>
+    </footer>
+
+    <script>
+
+        const contactButton = document.querySelector('.contact');
+        const popup = document.querySelector('.popup');
+        const demoOverlay = document.querySelector('.overlay');
+
+        demoOverlay.addEventListener('mousedown', () => {
+            popup.classList.remove('active');
+        })
+
+        contactButton.addEventListener('mousedown', () => {
+            popup.classList.add('active');
+        })
+    </script>
+
+</body>
+</html>

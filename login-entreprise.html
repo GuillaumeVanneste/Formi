@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="login">
+        <header>
+            <a href="./index.html"><img src="./images/logo_o.svg" alt=""></a>
+            <div>
+                <a href="./signup.html">Je n'ai pas de compte</a>
+                <a class="workspace" href="./login-apprenant.html">Espace Apprenant</a>
+            </div>
+        </header>
+        <div class="login">
+            <img src="./images/icons/login-icon.svg" alt="">
+            <div class="head">
+                <h1>Welcome Back !</h1>
+                <p>Bienvenue sur votre espace <b>entreprise</b></p>
+            </div>
+            <form action="./index.html">
+                <div>
+                    <label for="email">Adresse mail</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div>
+                    <label for="password">Mot de passe</label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+                
+                <div class="center">
+                    <button class="cta ctaFill ctaFull" type="submit">Connexion</button>
+                    <a class="ctaSecondary" >J'ai oublié mon mot de passe</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
